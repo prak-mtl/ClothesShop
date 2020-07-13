@@ -35,10 +35,8 @@ const Shop = (props) => {
 			final = newArr.map((item) => item.totalPrice);
       setCart(newArr);
 		}
-		final.reduce((acc,curr) => Number(acc) + Number(curr));
-		console.log(final);
-		
-		setSubTotal(final);
+		let total = final.reduce((acc,curr) => Number(acc) + Number(curr));
+		setSubTotal(total);
   };
 
   const removeItem = (item) => {
@@ -55,7 +53,10 @@ const Shop = (props) => {
         }
       } else newArr.push(cartItem);
     });
-    setCart(newArr);
+		setCart(newArr);
+		let final = newArr.map((item) => item.totalPrice);
+		let total = final.reduce((acc,curr) => Number(acc) + Number(curr));
+		setSubTotal(total);
   };
 
   const calcSubTotal = (newCart, tempCoupon) => {
