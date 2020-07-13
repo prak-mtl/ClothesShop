@@ -1,0 +1,79 @@
+<testsuites name="jest tests" tests="7" failures="5" time="12.716000000000001">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2020-03-09T07:37:08" time="4.793" tests="1">
+    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.447">
+    </testcase>
+  </testsuite>
+  <testsuite name="Hacker Shop &lt;App/&gt;" errors="0" failures="5" skipped="0" timestamp="2020-03-09T07:37:08" time="7.923" tests="6">
+    <testcase classname="Hacker Shop &lt;App/&gt; Empty Cart" name="Hacker Shop &lt;App/&gt; Empty Cart" time="0.309">
+    </testcase>
+    <testcase classname="Hacker Shop &lt;App/&gt; Delete Item not present in cart Nothing should happen" name="Hacker Shop &lt;App/&gt; Delete Item not present in cart Nothing should happen" time="0.171">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;Cap1$ 5Coupon CodeNONESub Total$ 5Shipping$ 3Tax(5%)$ 0.25Total Price$ 8.25&quot;
+Received: &quot;Coupon CodeNONESub Total$ 0Shipping$ 0Tax(5%)$ 0Total Price$ 0&quot;
+    at Object.it (C:\repo\reactApp\hacker-shop\src\test\App.test.js:27:57)
+    at Object.asyncFn (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\jasmine-async.js:68:30)
+    at resolve (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\queueRunner.js:31:21)
+    at Promise.resolve.then.el (C:\repo\reactApp\hacker-shop\node_modules\p-map\index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname="Hacker Shop &lt;App/&gt; Check Shipping cost (free shipping if Subtotal &gt; $50)" name="Hacker Shop &lt;App/&gt; Check Shipping cost (free shipping if Subtotal &gt; $50)" time="0.174">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;Tax(5%)$ 4&quot;
+Received: &quot;Tax(5%)$ 0&quot;
+    at Object.it (C:\repo\reactApp\hacker-shop\src\test\App.test.js:39:61)
+    at Object.asyncFn (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\jasmine-async.js:68:30)
+    at resolve (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\queueRunner.js:31:21)
+    at Promise.resolve.then.el (C:\repo\reactApp\hacker-shop\node_modules\p-map\index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname="Hacker Shop &lt;App/&gt; Check Tax is present in the cart" name="Hacker Shop &lt;App/&gt; Check Tax is present in the cart" time="0.137">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;Tax(5%)$ 4&quot;
+Received: &quot;Tax(5%)$ 0&quot;
+    at Object.it (C:\repo\reactApp\hacker-shop\src\test\App.test.js:48:61)
+    at Object.asyncFn (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\jasmine-async.js:68:30)
+    at resolve (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\queueRunner.js:31:21)
+    at Promise.resolve.then.el (C:\repo\reactApp\hacker-shop\node_modules\p-map\index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname="Hacker Shop &lt;App/&gt; Add item multiple times and deleting the item" name="Hacker Shop &lt;App/&gt; Add item multiple times and deleting the item" time="0.13">
+      <failure>Error: Method “text” is meant to be run on 1 node. 0 found instead.
+    at ReactWrapper.single (C:\repo\reactApp\hacker-shop\node_modules\enzyme\build\ReactWrapper.js:1788:17)
+    at ReactWrapper.text (C:\repo\reactApp\hacker-shop\node_modules\enzyme\build\ReactWrapper.js:922:21)
+    at Object.it (C:\repo\reactApp\hacker-shop\src\test\App.test.js:58:55)
+    at Object.asyncFn (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\jasmine-async.js:68:30)
+    at resolve (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\queueRunner.js:31:21)
+    at Promise.resolve.then.el (C:\repo\reactApp\hacker-shop\node_modules\p-map\index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname="Hacker Shop &lt;App/&gt; Check total price" name="Hacker Shop &lt;App/&gt; Check total price" time="0.119">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;Total Price$ 120.75&quot;
+Received: &quot;Total Price$ 0&quot;
+    at Object.it (C:\repo\reactApp\hacker-shop\src\test\App.test.js:77:68)
+    at Object.asyncFn (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\jasmine-async.js:68:30)
+    at resolve (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\repo\reactApp\hacker-shop\node_modules\jest-jasmine2\build\queueRunner.js:31:21)
+    at Promise.resolve.then.el (C:\repo\reactApp\hacker-shop\node_modules\p-map\index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
