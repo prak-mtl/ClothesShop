@@ -10,6 +10,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 
 const RightPanel = (props) => {
+// console.log(props.cart);
 
   return (
     <Grid id='GridRight'>
