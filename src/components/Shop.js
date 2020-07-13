@@ -12,18 +12,18 @@ const Shop = (props) => {
 
 
     const addItem = (item) => {
-        
+
     }
 
     const removeItem = (item) => {
         if (cart.some(cartItem => cartItem.name === item.name)) {
-            
+
         }
     }
 
     const calcSubTotal = (newCart, tempCoupon) => {
         if (newCart !== undefined && newCart !== null && newCart !== []) {
-            
+
         }
     }
 
@@ -37,8 +37,7 @@ const Shop = (props) => {
             <Grid className='GridRoot'>
                 <LeftPanel items={items} addItem={addItem} removeItem={removeItem}/>
                 <Divider orientation="vertical" />
-                <RightPanel cart={cart} coupon={coupon}
-                    handleCouponChange={handleCouponChange} subTotal={subTotal} />
+                <RightPanel cart={cart} coupon={coupon} handleCouponChange={handleCouponChange} subTotal={subTotal} />
             </Grid>
         </div>
     );
