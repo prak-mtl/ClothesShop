@@ -66,7 +66,7 @@ const RightPanel = (props) => {
             <TableRow id='taxRow'>
               <TableCell>Tax(5%)</TableCell>
               <TableCell></TableCell>
-              <TableCell align='center'>$ </TableCell>
+              <TableCell align='center'>$ {props.subTotal * 0.05}</TableCell>
             </TableRow>
             <TableRow id="totalPriceRow">
               <TableCell>Total Price</TableCell>
